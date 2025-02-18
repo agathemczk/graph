@@ -18,7 +18,6 @@ public class Link<E> implements ILink<E> {
         this.start = start;
         this.end = end;
         this.weight = weight;
-
         this.start.addLink(this);
         this.end.addLink(this);
     }
