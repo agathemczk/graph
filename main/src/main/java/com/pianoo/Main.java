@@ -8,7 +8,6 @@ public class Main {
         IView view = new View();
         IModel model = new Model();
         IController controller = new Controller();
-
         controller.setModel(model);
         controller.setView(view);
     }
