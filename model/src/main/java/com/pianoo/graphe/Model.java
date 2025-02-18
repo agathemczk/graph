@@ -5,5 +5,10 @@ public class Model implements IModel {
 
     public Model () {
         this.graph.loadFromJson("AventuriersDuRailEurope.json");
+        StringTreeNode root = new StringTreeNode("Paris");
+        root.addChild(new StringTreeNode("Londres"));
+        root.addChild(new StringTreeNode("Brest"));
+        System.out.println(root);
+        System.out.println(root.toPrettyText());
     }
 }
