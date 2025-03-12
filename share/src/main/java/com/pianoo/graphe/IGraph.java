@@ -1,5 +1,6 @@
 package com.pianoo.graphe;
 
+import com.am.treenode.NaryTreeNode;
 import com.google.gson.Gson;
 import lombok.NonNull;
 
@@ -11,4 +12,6 @@ public interface IGraph<E> {
 
     void loadFromJson(final String jsonFileName);
     Gson toJson();
+
+    NaryTreeNode<INode<E>> getMinSpanningTreeByPrim();
 }

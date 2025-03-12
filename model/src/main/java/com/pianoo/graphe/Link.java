@@ -21,4 +21,9 @@ public class Link<E> implements ILink<E> {
         this.start.addLink(this);
         this.end.addLink(this);
     }
+
+    @Override
+    public int compareTo(final ILink<E> other) {
+        return Integer.compare(this.getWeight(), other.getWeight());
+    }
 }

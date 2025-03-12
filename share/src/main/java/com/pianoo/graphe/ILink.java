@@ -1,6 +1,6 @@
 package com.pianoo.graphe;
 
-public interface ILink<E> {
+public interface ILink<E> extends Comparable<ILink<E>> {
     INode<E> getStart();
     INode<E> getEnd();
 
